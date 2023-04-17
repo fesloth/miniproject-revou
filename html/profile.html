@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to my website</title>
+    <link rel="stylesheet" href="/css/profile.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" />
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav id="navbar" class="navbar">
+    <div class="container">
+        <div class="menu">
+            <a href="#about" class="menu-icon fas fa-user">Profile</a>
+            <a href="#visimisi" class="menu-icon fas fa-book-open">Vision & Mission</a>
+            <a href="#contact" class="menu-icon fas fa-envelope">Contact</a>
+        </div>
+    </div>
+    </nav>
+    <!-- Welcome -->
+    <div class="main-content">
+        <h1 id="nama">, Welcome To My Website</h1> 
+    </div>
+    <div class="content">
+    <!-- about profile -->
+    <h1 id="about">Profile</h1>
+    <div class="about-school">
+    <section class="header">
+        <img class="header-img"
+            src="/img/Sleepy cutie.jpeg">
+        <h1>Syahla Nur Azizah</h1>
+        <h2>I am a student from <br>
+            SMKN 2 Banjarmasin majoring in PPLG</h2>
+    </section>
+    <br>
+    <!-- school -->
+        <div class="school-one">
+            <img src="/img/smk 2-1.jpg">
+            <br>
+            <p> Do you know SMKN 2 Banjarmasin? <br>
+                it's a vocational school that has a lot of majors, <br>
+                it's specially built for students who are ready to work, <br>
+                and get experience from apprenticeship.</p>
+        
+                <p>
+                    Click this icon for open SMKN 2 BANJARMASIN website <br>
+                    <a href="https://smkn2-bjm.sch.id/" target="_blank" class="fas fa-school"></a>
+                </p>
+                <br>
+        </div>
+    </div>
+    <br>
+    <!-- vision mission -->
+    <h1 id="visimisi">Vision & Mission</h1>
+    <div class="visi-misi">
+        <div class="visi">
+        <h3>Vision</h3>
+         <p>Become a reliable backend developer, <br>
+            able to develop innovative information technology solutions, <br>
+            able to keep up with the times where technology is increasingly advanced, <br>
+            and can benefit society. <br></p>
+        </div>
+        <div class="misi">
+        <h3>Mission</h3>
+         <p>
+            -Develop strong and in-depth programming skills in backend programming languages such as Javascript and PHP. <br>
+            -Understand the basic concepts and architecture of web and database applications to be able to develop <br>
+            integrated and efficient information technology solutions. <br>
+            -Always follow the latest developments in information technology and update knowledge and skills regularly <br>
+            so that we can always provide the best solutions for users. <br>
+            -Able to work as a team and collaborate with other teams to develop more complex and effective solutions. <br>
+            -Making ethics and responsibility a priority in the development of information technology solutions that <br>
+            can provide positive benefits to society and the environment.
+         </p>
+        </div>
+    </div>
+    <br>
+    <!-- contact -->
+    <div class="text" id="contact">
+        <h1>Contact Me</h1>
+        </div>
+    <div class="socials">
+        <div class="socials-icon">
+        <a href="https://twitter.com/nielvoff?s=20" target="_blank" class="fab fa-twitter" id="profile-link"></a>
+        <a href="https://github.com/fesloth" target="_blank" class="fab fa-github"></a>
+        <a href="https://www.instagram.com/fesloth/" target="_blank" class="fab fa-instagram"></a>
+        <a href="https://api.whatsapp.com/send?phone=6287816983631" target="_blank" class="fab fa-whatsapp"></a>
+        <a href="https://t.me/skmrts" target="_blank" class="fab fa-telegram"></a>
+        <a href="https://line.me/ti/p/1rW1fds806" target="_blank" class="fab fa-line"></a>
+        <a href="https://www.linkedin.com/in/syahla-nur-azizah-3a8ab4270/" target="_blank" class="fab fa-linkedin"></a>
+        </div>
+    </div>
+    <footer>
+        <p style="text-align: end; opacity: 0.7;">Created by Syahla Nur Azizah@Revou.member(SE-10-Apr-23)</p>
+    </footer>
+    <script>
+    // Menentukan posisi bagian paling atas halaman web
+    window.scrollTo(0, 0);
+
+    // Name 
+    // Meminta pengguna untuk memasukkan nama mereka melalui prompt
+    const name = prompt('Please enter your name:');
+
+    // Mengambil elemen h1 pada halaman web
+    const heading = document.getElementById('nama');
+
+    // Menampilkan nama pada elemen h1
+    heading.innerText = `Hi ${name}, Welcome To My Website`;
+    </script>
+</body>
+</html>

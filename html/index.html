@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home page</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- header -->
+      <nav class="header-wrapper">
+        <div class="logo">
+          <img src="/img/revou 2.png" width="40" height="40" />
+        </div>
+        <ul class="menu">
+          <li class="radius-left"><a href="#home-menu">Home</a></li>
+          <li><a href="#">Our Profile</a></li>
+          <li><a href="#">Achievement</a></li>
+          <li class="radius-right"><a href="#message-menu">Message Us</a></li>
+        </ul>
+      </nav>
+      <!-- Navbar -->
+      <div class="main-content" id="home-menu">
+        <h1 id="nama">, Welcome To Website</h1>
+        <p>Ini adalah website latihan pertama</p>
+      </div>
+      <!-- Our Facillitation -->
+      <hr />
+      <div class="profile">
+        <div class="pro-header">
+          <h1>Our Facillitation</h1>
+        </div>
+        <div class="pro-content">
+          <div class="pro-img">
+            <div class="col-img">
+              <img src="/img/img-1.jpeg" />
+              <p>Professional Teacher</p>
+            </div>
+            <div class="col-img">
+              <img src="/img/img-2.jpeg" />
+              <p>Sport Field</p>
+            </div>
+            <div class="col-img">
+              <img src="/img/img-3.jpeg" />
+              <p>Classroom</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- form -->
+      <hr class="line-2" id="message-menu" />
+      <div class="message-header"><h1>Message Us</h1></div>
+      <div class="message">
+        <form id="form" action="">
+          <div class="form-control">
+            <label for="name"
+              >Nama <span style="margin-left: 53px">:</span></label
+            >
+            <input type="text" id="name" placeholder="Nama" />
+          </div>
+          <div class="form-control">
+            <label for="birthdate">Tanggal Lahir :</label>
+            <input type="date" id="birthdate" />
+          </div>
+          <div class="form-control">
+            <label
+              >Jenis Kelamin <span style="margin-left: -3px">:</span></label
+            >
+            <div class="radio-btn">
+              <input type="radio" id="male" name="gender" value="male" />
+              <label for="male">Laki-Laki</label>
+              <input type="radio" id="female" name="gender" value="female" />
+              <label for="female">Perempuan</label>
+            </div>
+          </div>
+          <div class="form-control">
+            <label for="message"
+              >Pesan<span style="margin-left: 55px">:</span></label
+            >
+            <textarea
+              type="text"
+              id="message"
+              placeholder="Pesan"
+              max="90"
+            ></textarea>
+          </div>
+          <button type="submit" id="submit">Submit</button>
+        </form>
+        <div class="center-mobile">
+          <div class="output">
+            <p class="time">Current Time: <span id="current-time"></span></p>
+            <p>Nama: <span id="output-name"></span></p>
+            <p>Tanggal Lahir: <span id="output-birthdate"></span></p>
+            <p>Jenis Kelamin: <span id="output-gender"></span></p>
+            <p class="textBawah">Pesan: <span id="output-message"></span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <p class="footer-text">
+        Created by Syahla Nur Azizah@Revou.member(SE-10-Apr-23)
+      </p>
+    </div>
+    <script>
+      // Mengambil referensi elemen input
+      const inputElem = document.getElementById("message");
+
+      // Mengatur posisi kursor pada awal teks inputan
+      inputElem.setSelectionRange(0, 0);
+
+      // Fokus pada elemen input
+      inputElem.focus();
+    </script>
+    <script src="/js/script.js"></script>
+  </body>
+</html>

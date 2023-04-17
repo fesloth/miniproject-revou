@@ -1,0 +1,228 @@
+/*=============== GOOGLE FONTS ===============*/
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/*=============== VARIABLES ===============*/
+
+:root {
+    --accent-color: #152951;
+    --background-color: #1A1A1A;
+    --background-color-2: #787A91;
+    --light-grey: #60686A;
+    --border-radius: 30px;
+}
+
+:root {
+    scroll-behavior: smooth;
+  }
+
+/*=============== BASE ===============*/
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+html {
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    background-color: var(--background-color-2);
+}
+
+a {
+    text-decoration: none;
+    color: var(--accent-color);
+}
+
+p {
+    line-height: 1.5rem;
+    margin-bottom: 0.7rem;
+}
+
+h1 {
+    line-height: 3rem;
+    text-align: center;
+}
+
+h2 {
+    line-height: 2rem;
+    font-weight: normal;
+    text-align: center;
+}
+
+.main-content {
+    margin: 10px 70px;
+    height: 578px;
+    width: 1366px;
+}
+
+.main-content h1 {
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+.navbar {
+    border-bottom: 1px solid #222;
+    width: 100%;
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.menu-icon {
+    font-size: 1.5rem;
+    color: black;
+    margin: 15px;
+}
+
+.menu-icon:hover {
+    color: var(--accent-color);
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: var(--border-radius);
+    color: white;
+    overflow: auto;
+}
+
+.header-img {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    margin: 10px;
+    margin-top: 50px;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.5);
+}
+
+.header h1 {
+    font-size: 2.5rem;
+}
+
+.header h2 {
+    font-size: 1rem;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.about-school {
+    background-color: #4C6687;
+    margin: 50px 50px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.5);
+}
+
+.school-one img {
+    width: 30%;
+    height: 30%;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 3px;
+    
+}
+
+.school-one p {
+    line-height:20px;
+    text-align: center;
+}
+
+.visi-misi {
+    background-color: #4C6687;
+    padding: 20px 19px;
+    margin: 50px 50px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.5);
+}
+
+.visi-misi:hover {
+    cursor: pointer;
+    background-color: #759acb;
+}
+
+.visi {
+    text-align: left;
+}
+
+.misi {
+    text-align: end;
+}
+
+.socials {
+    background-color: #4C6687;
+    margin: 50px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.5);
+
+}
+
+.socials a:hover {
+    color: #fffefe;
+}
+
+.socials a {
+    font-size: 2rem;
+    margin: 50px 50px;
+   
+}
+
+@media (max-width: 670px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .menu-icon {
+        font-size: 1.2rem;
+    }
+
+    .main-content h1 {
+        font-size: 30px;
+    }
+
+    .main-content  {
+        width: 70%;
+        height: 50%;
+    }
+
+    .school-one img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .school-one p {
+        font-size: 15px;
+        text-align: center;
+        padding: 5px 2px;
+    }
+
+    .socials {
+        display: flex;
+        flex-direction: column;
+        height: 300px;
+        
+    }
+
+    .socials-icon a {
+        align-items: center;
+        font-size: 1.3rem;
+        margin: 0 5px;
+    }
+}
